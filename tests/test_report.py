@@ -17,7 +17,7 @@ class TestReport(unittest.TestCase):
 
         self.assertEqual("Total Calories Consumed is 1200kcal", report)
 
-    @unittest.skip
+    # @unittest.skip
     def test_get_report_when_some_data_is_missing(self):
         mock_repo = Mock()
         mock_repo.get_diet.return_value = [
